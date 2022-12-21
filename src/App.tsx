@@ -45,7 +45,7 @@ useEffect(()=>{
     /*we used useEffect here as the error showed too many re rendering, to avoid repeatation we use useEffect */
     useEffect(()=>{
         const filteredProducts= products.filter((product)=>{
-            product.title.toLowerCase().includes(userInput.toLowerCase())
+            return   product.title.toLowerCase().includes(userInput.toLowerCase())
         })
         setProducts(filteredProducts)
        /* setFilteredProducts(filteredProducts)*/

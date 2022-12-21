@@ -10,7 +10,7 @@ type Prop ={
 export default function SearchForm({userInput,setUserInput}:Prop) {
     function userInputHandler(event:React.ChangeEvent<HTMLInputElement>){
       const input=event.target.value;
-      setUserInput(input);
+        setUserInput(input);
     }
    /* console.log(userInput)*/
 
@@ -18,7 +18,7 @@ export default function SearchForm({userInput,setUserInput}:Prop) {
       <div>
      <form>
        <label>Search product  </label>
-         <input type='text' onChange={userInputHandler}></input>
+         <input type='text' onChange={userInputHandler}/>
      </form>
   </div>
   );
